@@ -20,7 +20,7 @@ installed in every environment:
   - **Claude** → `evidence-appraisal.skill`
   - **GitHub Copilot CLI** → `evidence-appraisal.zip`
 
-> *This repo is intended to be **private**, shared with named colleagues — it contains internal material (the VP deck), so please don't make it public.*
+> *Shared openly for the research community under the [MIT License](LICENSE) — reuse and adapt it freely. The explainer deck is a general introduction, not internal material. Please cite the original checklist publications (PRISMA, ROBIS, AMSTAR-2, etc.) when using them.*
 
 ## What's in this folder
 
