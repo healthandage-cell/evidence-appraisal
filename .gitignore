@@ -4,3 +4,7 @@ Desktop.ini
 .DS_Store
 # Office lock files (created when a doc is open)
 ~$*
+# Stray "Save As" copies of the README (keep only README.html / README.md)
+README evidence skill.html
+README.html evidence skill.html
+*copy*.html
