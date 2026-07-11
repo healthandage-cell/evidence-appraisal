@@ -5,7 +5,7 @@ systematic-review manuscripts against the standard reporting and quality tools
 (PRISMA 2020, PRISMA-NMA, ROBIS, AMSTAR-2, PRISMA-P, SPIRIT), plus the worked example it
 was tested on and a deck explaining it. Not tied to any single project.
 
-> **Owner:** Yvonne · **Created:** 2026-07-10 · **Current method version:** 1.0
+> **Owner:** Yvonne · **Created:** 2026-07-10 · **Current method version:** 1.1
 
 ---
 

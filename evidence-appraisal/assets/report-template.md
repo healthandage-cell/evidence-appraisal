@@ -1,9 +1,11 @@
 # Evidence Appraisal Report — [Short study label]
 
 **Appraised document:** [Full citation]. DOI/PMID/URL: [...].
+**Source file:** [exact filename appraised]  ·  **Supplement/appendix included:** [Yes — which / No]
 **Registration:** [PROSPERO / ClinicalTrials.gov ID, or "none stated"]
-**Appraisal date:** [YYYY-MM-DD]
-**Tools applied:** [e.g. PRISMA 2020 (+ PRISMA-NMA) · ROBIS · AMSTAR-2]
+**Appraisal date:** [YYYY-MM-DD]  ·  **Method version:** evidence-appraisal v[x.y]
+**Tools applied:** [e.g. PRISMA 2020 (+ PRISMA-NMA) · ROBIS · AMSTAR-2] (with versions / citations)
+**Prepared by:** AI-assisted draft — [tool/model]  ·  **Verified by:** ____________ (name, role, date)
 
 > **Routing note.** Document type detected = [type]. [Why these tools; note if NMA
 > branch or SPIRIT/PRISMA-P applies.]
@@ -32,6 +34,8 @@ contradiction. State plainly whether the review is substantively strong or weak.
 ## 2. [PRISMA 2020 / PRISMA-P / SPIRIT] — item-by-item
 
 Legend: ✅ Yes · 🟡 Partial · ❌ Not reported
+
+*Each comment quotes the supporting text verbatim (short) or states "no supporting text found" — so any rating can be checked against the source.*
 
 | # | Item | Rating | Location / comment |
 |---|---|---|---|
@@ -86,6 +90,18 @@ change the band.]
 ## 6. Notes
 [Anything else: derivative/promotional summaries seen and whether faithful;
 currency of the search; CONSORT vs SPIRIT flag; etc.]
+
+## 7. Provenance & sign-off
+
+- **Method:** evidence-appraisal v[x.y]; tools as listed above, each with its source citation.
+- **Inputs seen:** [source file(s); whether the supplement/appendix was included]. Items that could not be verified from what was provided are marked "not verified" above.
+- **AI disclosure:** produced as an AI-assisted draft ([tool/model]). **Not authoritative until verified below.**
+
+**Verification — required before use in a dossier or submission:**
+
+> Verified by: ____________________   Role: ______________   Date: __________
+>
+> Verifier's note (items checked, changed, or disputed): ____________________
 
 ---
 

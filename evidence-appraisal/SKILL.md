@@ -1,6 +1,6 @@
 ---
 name: evidence-appraisal
-version: "1.0"
+version: "1.1"
 description: >-
   Appraise a clinical protocol or manuscript against the standard reporting and
   quality-appraisal instruments — PRISMA 2020, PRISMA-NMA, ROBIS, AMSTAR-2,
@@ -70,8 +70,10 @@ quality verdict.
 ## Step 2 — Apply each tool item by item
 
 Open the relevant reference file(s) and work through every item. For each item
-record: a rating, the location in the document (section/figure/page), and a short
-evidence-anchored comment. Ratings differ by tool — the reference files give the
+record: a rating, the location in the document (section/figure/page), a short
+comment, and a **verbatim quote of the supporting text** (a few words is enough) —
+or "no supporting text found" if the document is silent, never inferring a rating
+from silence. That anchoring is what makes each verdict auditable. Ratings differ by tool — the reference files give the
 exact scheme and, for AMSTAR-2 and ROBIS, the algorithm that turns item-level
 judgements into an overall verdict. Follow those algorithms exactly; the whole
 point of these tools is that the verdict is rule-based, not vibes.
@@ -101,6 +103,35 @@ Use `assets/report-template.md` as the fixed structure. Always include:
 Write the report to a `.md` file next to the source document and present a
 condensed version inline. Keep the tone evidence-anchored and neutral — this often
 feeds an HTA dossier, so no marketing language and no overstating certainty.
+
+## Auditability & provenance
+
+An appraisal that feeds an HTA dossier or a submission has to be *defensible* — a
+reviewer or payer must be able to trace every verdict to the source and see who
+stands behind it. Build that in, don't bolt it on:
+
+- **Anchor every judgement.** Each item rating cites the exact location and quotes
+  the supporting text verbatim (short). A reader should be able to verify any single
+  verdict in seconds without re-reading the whole paper. If no supporting text
+  exists, say so — never infer a rating from silence.
+- **Stamp provenance on every report.** The header records: the appraised document
+  (full citation + DOI/PMID and the exact source file name), whether the
+  supplement/appendix was included, the method version (this skill's `version:`),
+  the tool versions with citations, and the date.
+- **Require human sign-off.** This skill produces a *draft*. It is not authoritative
+  until a named person has verified it. End every report with a sign-off block —
+  "Verified by: ____ (name, role, date)" — left blank for that person to complete.
+  Do not present an unverified appraisal as final.
+- **Disclose AI involvement.** State plainly that the draft was AI-assisted and by
+  what. This is an integrity requirement, not a courtesy — some journals and HTA
+  bodies mandate it.
+- **Keep an immutable record.** Commit each finalised report to version control
+  (git) and add a row to `examples/appraisal-log.md`. Together these give a
+  timestamped, tamper-evident trail of what was appraised, by which method, and who
+  verified it.
+
+The polish of the output must never substitute for the human check — that is the
+line between "a nice report" and "a signed, traceable record".
 
 ## Common judgement calls
 

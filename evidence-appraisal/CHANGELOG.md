@@ -6,6 +6,13 @@ This tracks the *appraisal method*, not the papers appraised (those live in `..\
 Versioning: bump the `version:` field in `SKILL.md` and add an entry below, then re-package
 (`..\repackage.py` or `..\repackage.cmd`) and re-upload in Claude → Settings → Customize → Skills.
 
+## [1.1] — 2026-07-11
+### Added — auditability & provenance
+- SKILL.md: new "Auditability & provenance" section; item ratings must quote the supporting text verbatim (or state none found).
+- report-template.md: provenance header (source file, supplement Y/N, method version), AI-use disclosure, and a required human **sign-off block**.
+- appraisal-log.md: added Supplement, Verified-by and Verified-date columns; DOI in the document column.
+- Principle: the skill produces a *draft*; it is not authoritative until a named human verifies it.
+
 ## [1.0] — 2026-07-10
 Initial release.
 - Routing logic: SR/MA manuscript → PRISMA 2020 + ROBIS + AMSTAR-2; network meta-analysis
