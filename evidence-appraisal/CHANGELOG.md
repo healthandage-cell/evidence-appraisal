@@ -6,6 +6,12 @@ This tracks the *appraisal method*, not the papers appraised (those live in `..\
 Versioning: bump the `version:` field in `SKILL.md` and add an entry below, then re-package
 (`..\repackage.py` or `..\repackage.cmd`) and re-upload in Claude → Settings → Customize → Skills.
 
+## [1.2] — 2026-07-11
+### Added — CONSORT 2010
+- New `references/consort-2010.md` (25-item checklist) for appraising **individual randomised trial reports** — the reporting counterpart to SPIRIT (protocols).
+- SKILL.md: routing row (RCT report → CONSORT 2010), detection cue, and CONSORT added to the tool list / description.
+- Note: individual-RCT risk of bias (Cochrane RoB 2) flagged as the companion tool, not yet bundled.
+
 ## [1.1] — 2026-07-11
 ### Added — auditability & provenance
 - SKILL.md: new "Auditability & provenance" section; item ratings must quote the supporting text verbatim (or state none found).

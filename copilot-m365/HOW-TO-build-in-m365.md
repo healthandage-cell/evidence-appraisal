@@ -16,7 +16,7 @@ Best for personal use or sharing with a few colleagues.
 2. Go to the **Agents** area and choose **Create agent** (or "Build your own").
 3. Switch to the **Configure** tab and fill in:
    - **Name:** Evidence Appraisal
-   - **Description:** Appraises systematic reviews, meta-analyses and study protocols against PRISMA 2020, PRISMA-NMA, ROBIS, AMSTAR-2, PRISMA-P and SPIRIT.
+   - **Description:** Appraises systematic reviews, meta-analyses, study protocols and randomised trial reports against PRISMA 2020, PRISMA-NMA, ROBIS, AMSTAR-2, PRISMA-P, SPIRIT and CONSORT.
    - **Instructions:** paste the whole block from **`agent-instructions.md`**.
 4. Under **Knowledge**, upload **`knowledge-checklists.docx`** (Word, upload-ready). This gives the agent the actual checklists to work from.
 5. **Create / Save**, then use **Share** to give access to specific colleagues.

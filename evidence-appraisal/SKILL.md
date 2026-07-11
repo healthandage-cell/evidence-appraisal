@@ -1,10 +1,10 @@
 ---
 name: evidence-appraisal
-version: "1.1"
+version: "1.2"
 description: >-
   Appraise a clinical protocol or manuscript against the standard reporting and
   quality-appraisal instruments — PRISMA 2020, PRISMA-NMA, ROBIS, AMSTAR-2,
-  PRISMA-P, and SPIRIT. Use this skill whenever the user wants to check, appraise,
+  PRISMA-P, SPIRIT, and CONSORT. Use this skill whenever the user wants to check, appraise,
   critically appraise, quality-assess, or QC a systematic review, meta-analysis,
   network meta-analysis, review manuscript, or study protocol against a checklist
   or risk-of-bias tool. Trigger on requests like "appraise this SR", "check this
@@ -49,18 +49,21 @@ approximation:
 | Systematic review with **network** meta-analysis (NMA) | PRISMA 2020 **+ PRISMA-NMA items** + ROBIS + AMSTAR-2 | `prisma-2020.md`, `prisma-nma.md`, `robis.md`, `amstar-2.md` |
 | Systematic review **protocol** (PROSPERO-style) | PRISMA-P | `prisma-p.md` |
 | Clinical **trial protocol** | SPIRIT 2013 | `spirit-2013.md` |
+| Individual **randomised trial report** (single RCT) | CONSORT 2010 | `consort-2010.md` |
 
 Detection cues: an NMA mentions "network meta-analysis", "indirect comparison",
 "SUCRA", "netmeta", or a treatment network figure — route it through the NMA
 branch, since plain PRISMA 2020 misses network-specific reporting. A protocol
 describes what *will* be done (future tense, no results); a manuscript reports
-what *was* done and found.
+what *was* done and found. An **individual trial report** presents the methods and
+results of a *single* RCT (one study, not a synthesis) — route it to CONSORT 2010,
+the reporting counterpart to SPIRIT (SPIRIT = protocol/planned, CONSORT = report/done).
 
 If the type is genuinely ambiguous, state your best read and why, then proceed —
 don't stall. If the user named a specific tool ("run AMSTAR-2 on this"), honour
 that even if you'd also add others; note the additions.
 
-**Reporting vs appraisal — keep them distinct.** PRISMA/PRISMA-P/PRISMA-NMA/SPIRIT
+**Reporting vs appraisal — keep them distinct.** PRISMA/PRISMA-P/PRISMA-NMA/SPIRIT/CONSORT
 check whether the document *reports* things (author-side completeness). ROBIS and
 AMSTAR-2 appraise whether the review was *conducted* well enough to trust
 (appraiser-side). Good reporting does not imply low risk of bias, and a review can

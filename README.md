@@ -2,10 +2,10 @@
 
 A self-contained, **global** capability: an AI skill that appraises clinical protocols and
 systematic-review manuscripts against the standard reporting and quality tools
-(PRISMA 2020, PRISMA-NMA, ROBIS, AMSTAR-2, PRISMA-P, SPIRIT), plus the worked example it
+(PRISMA 2020, PRISMA-NMA, ROBIS, AMSTAR-2, PRISMA-P, SPIRIT, CONSORT), plus the worked example it
 was tested on and a deck explaining it. Not tied to any single project.
 
-> **Owner:** Yvonne · **Created:** 2026-07-10 · **Current method version:** 1.1
+> **Owner:** Yvonne · **Created:** 2026-07-10 · **Current method version:** 1.2
 
 ---
 
@@ -67,7 +67,7 @@ When you change *how* it appraises — add a tool (e.g. CONSORT), refine a check
 
 Two different questions, kept deliberately separate:
 
-- **Reporting completeness** (PRISMA / PRISMA-P / PRISMA-NMA / SPIRIT) — *is it fully written up?*
+- **Reporting completeness** (PRISMA / PRISMA-P / PRISMA-NMA / SPIRIT / CONSORT) — *is it fully written up?*
 - **Methodological quality / risk of bias** (ROBIS, AMSTAR-2) — *can it be trusted?*
 
 A review can be beautifully reported yet still high risk of bias. A frequent surprise:
@@ -100,4 +100,5 @@ A different product from Microsoft 365 Copilot:
 
 - **Installed at:** Claude → Settings → Customize → Skills → *evidence-appraisal* (Author: You)
 - **Triggers on:** requests to appraise / critically appraise / QC a systematic review, meta-analysis, NMA, or study protocol against a checklist or risk-of-bias tool.
-- **Routing:** SR/MA manuscript → PRISMA 2020 + ROBIS + AMSTAR-2 · NMA → adds PRISMA-NMA · SR protocol → PRISMA-P · trial protocol → SPIRIT 2013.
+- **Routing:** SR/MA manuscript → PRISMA 2020 + ROBIS + AMSTAR-2 · NMA → adds PRISMA-NMA · SR protocol → PRISMA-P · trial protocol → SPIRIT 2013 · RCT report → CONSORT 2010.
+- **Auditable by design (v1.2):** every rating quotes its source; each report carries a provenance header, an AI-use disclosure, and a required human **sign-off block**; the appraisal-log records who verified what — an AI draft is not authoritative until signed off.
