@@ -1,9 +1,11 @@
 # Evidence Appraisal Report — Di Molfetta et al. 2024 (HCL Network Meta-Analysis)
 
 **Appraised document:** Di Molfetta S, Di Gioia L, Caruso I, et al. *Efficacy and Safety of Different Hybrid Closed Loop Systems for Automated Insulin Delivery in People With Type 1 Diabetes: A Systematic Review and Network Meta-Analysis.* Diabetes/Metabolism Research and Reviews. 2024;40(6):e3842. DOI: 10.1002/dmrr.3842.
+**Source files:** peer-reviewed article PDF + Supporting Information S1 (`dmrr3842-sup-0001-suppl-data.docx`)  ·  **Supplement included:** Yes (SI S1, reviewed in full)
 **Registration:** PROSPERO CRD42023453717
-**Appraisal date:** 2026-07-10
-**Tools applied:** PRISMA 2020 (+ PRISMA-NMA items) · ROBIS · AMSTAR-2
+**Appraisal date:** 2026-07-10  ·  **Method version:** evidence-appraisal v1.1
+**Tools applied:** PRISMA 2020 (+ PRISMA-NMA, Hutton 2015) · ROBIS (Whiting 2016) · AMSTAR-2 (Shea 2017)
+**Prepared by:** AI-assisted draft (Claude)  ·  **Verified by:** ____________ (name, role, date) — *pending sign-off*
 
 > **Routing note.** Document type detected = **systematic review with network meta-analysis (NMA)**. The correct reporting standard is **PRISMA-NMA (Hutton 2015)**, which extends PRISMA 2020 with items on network geometry, ranking, transitivity, and consistency. This report scores PRISMA 2020 and notes the NMA-specific items separately.
 >
@@ -129,6 +131,18 @@ Critical domains (per Shea 2017) are **items 2, 4, 7, 9, 11, 13, 15** — marked
 
 The Medtronic evidence card accurately reproduces the headline findings (MiniMed 780G largest TIR improvement; DBLG1 largest TBR reduction; low serious-AE rates) **and — to its credit — reproduces the primary study's own caution** that "the certainty of the evidence was low for many comparisons… should not be regarded as conclusive." It is a faithful summary. It is **not** itself a systematic review and was not appraised against PRISMA/ROBIS/AMSTAR-2.
 
+## 7. Provenance & sign-off
+
+- **Method:** evidence-appraisal v1.1; PRISMA 2020, PRISMA-NMA (Hutton 2015), ROBIS (Whiting 2016), AMSTAR-2 (Shea 2017).
+- **Inputs seen:** the published article **and** Supporting Information S1 (`dmrr3842-sup-0001-suppl-data.docx`). No items remain "not verified" — the supplement was reviewed in full.
+- **AI disclosure:** produced as an AI-assisted draft (Claude). **Not authoritative until verified below.**
+
+**Verification — required before use in a dossier or submission:**
+
+> Verified by: ____________________   Role: ______________   Date: __________
+>
+> Verifier's note (items checked, changed, or disputed): ____________________
+
 ---
 
-*Finalised 2026-07-10 with Supporting Information S1 reviewed. AMSTAR-2 items 4 (Partial Yes) and 7 (No) confirmed; overall AMSTAR-2 confidence = Low, ROBIS = Low risk of bias, PRISMA 2020 = high completeness.*
+*Finalised 2026-07-10 with Supporting Information S1 reviewed. AMSTAR-2 items 4 (Partial Yes) and 7 (No) confirmed; overall AMSTAR-2 confidence = Low, ROBIS = Low risk of bias, PRISMA 2020 = high completeness. Appraised under evidence-appraisal v1.1 — AI-assisted draft, pending human sign-off.*
