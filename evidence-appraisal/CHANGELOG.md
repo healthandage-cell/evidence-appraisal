@@ -12,6 +12,9 @@ Versioning: bump the `version:` field in `SKILL.md` and add an entry below, then
 - SKILL.md: routing row (RCT report → CONSORT 2010), detection cue, and CONSORT added to the tool list / description.
 - Note: individual-RCT risk of bias (Cochrane RoB 2) flagged as the companion tool, not yet bundled.
 
+### Packaging
+- Added a **self-contained standalone build** (`build-standalone.py` → `evidence-appraisal-standalone.skill`) that inlines all seven checklists + the report template into a single `SKILL.md`. This is the correct upload for Claude Desktop, whose skill upload keeps only `SKILL.md` and drops bundled folders (the modular `.skill` installs without its checklists).
+
 ## [1.1] — 2026-07-11
 ### Added — auditability & provenance
 - SKILL.md: new "Auditability & provenance" section; item ratings must quote the supporting text verbatim (or state none found).

@@ -84,7 +84,7 @@
   <ul class="facts">
     <li><strong>Download:</strong> on GitHub, click <strong>Code → Download ZIP</strong>, or clone with <code>git clone &lt;repo-url&gt;</code>.</li>
     <li><strong>Microsoft 365 Copilot</strong> → the <code>copilot-m365\</code> folder (agent instructions + <code>knowledge-checklists.docx</code>).</li>
-    <li><strong>Claude</strong> → <code>evidence-appraisal.skill</code>.</li>
+    <li><strong>Claude Desktop</strong> → <code>evidence-appraisal-standalone.skill</code> (self-contained single file — Claude's upload keeps only <code>SKILL.md</code>).</li>
     <li><strong>GitHub Copilot CLI</strong> → <code>evidence-appraisal.zip</code>.</li>
   </ul>
   <div class="concept">
@@ -105,7 +105,8 @@
     <tr><td><code>examples\Di-Molfetta-2024-NMA\</code></td><td>The worked example (Di Molfetta 2024 network meta-analysis) in <code>.docx</code> + <code>.md</code>.</td><td>Reference only</td></tr>
     <tr><td><code>Evidence_Appraisal_Skill_explainer.pptx</code></td><td>12-slide explainer: what a skill is, how it works, how it was tested, how teams use it.</td><td class="yes">Yes (regenerate if needed)</td></tr>
     <tr><td><code>repackage.py</code> / <code>repackage.cmd</code></td><td>Rebuilds the installable package from the skill folder. Run after editing the skill.</td><td>Run, don't edit</td></tr>
-    <tr><td><code>evidence-appraisal.skill</code> / <code>.zip</code></td><td>The <strong>installable package</strong> (identical contents). Upload to install/update the skill.</td><td>Auto-generated</td></tr>
+    <tr><td><code>evidence-appraisal-standalone.skill</code> / <code>.zip</code></td><td><strong>Upload this to Claude Desktop.</strong> A self-contained single <code>SKILL.md</code> with every checklist inlined — Claude's upload keeps only <code>SKILL.md</code> and drops bundled folders.</td><td>Auto-generated</td></tr>
+    <tr><td><code>evidence-appraisal.skill</code> / <code>.zip</code></td><td>Modular package (separate reference files). Fine for hosts that keep the whole bundle; installs <strong>incomplete</strong> on Claude Desktop, so prefer the standalone.</td><td>Auto-generated</td></tr>
     <tr><td><code>copilot-m365\</code></td><td>Transfer pack for <strong>Microsoft 365 Copilot</strong>: agent instructions + combined knowledge file + build guide.</td><td>Reference / share</td></tr>
   </table>
   </div>
@@ -133,7 +134,7 @@
         <li>Edit the files in <code>evidence-appraisal\</code>.</li>
         <li>Bump <code>version:</code> in <code>SKILL.md</code> and add a <code>CHANGELOG.md</code> entry.</li>
         <li>Double-click <code>repackage.cmd</code> (or run <code>python repackage.py</code>).</li>
-        <li>Re-publish: <strong>Claude → Settings → Customize → Skills → Add</strong> → select <code>evidence-appraisal.skill</code>.</li>
+        <li>Re-publish: run <code>python build-standalone.py</code>, then <strong>Claude → Settings → Customize → Skills → Add</strong> → select <code>evidence-appraisal-standalone.skill</code>.</li>
       </ol>
     </div>
   </div>

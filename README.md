@@ -17,7 +17,7 @@ installed in every environment:
 - **Download:** on GitHub, click **Code → Download ZIP**, or clone with `git clone <repo-url>`.
 - Then pick the artifact for whatever you use (details in the table below and in *"Sharing it with a colleague on Copilot"*):
   - **Microsoft 365 Copilot** → the `copilot-m365\` folder (agent instructions + `knowledge-checklists.docx`)
-  - **Claude** → `evidence-appraisal.skill`
+  - **Claude Desktop** → `evidence-appraisal-standalone.skill` *(self-contained single file — see note below)*
   - **GitHub Copilot CLI** → `evidence-appraisal.zip`
 
 > *Shared openly for the research community under the [MIT License](LICENSE) — reuse and adapt it freely. The explainer deck is a general introduction, not internal material. Please cite the original checklist publications (PRISMA, ROBIS, AMSTAR-2, etc.) when using them.*
@@ -37,7 +37,9 @@ installed in every environment:
 | **`Evidence_Appraisal_Skill_explainer.pptx`** | 12-slide VP explainer: what a skill is, how it works, how it was tested, how teams use it. | ✅ (regenerate if needed) |
 | `repackage.py` | Rebuilds the installable package from `evidence-appraisal\`. Run after editing the skill. | Run, don't edit |
 | `repackage.cmd` | Double-click shortcut that runs `repackage.py`. | Run, don't edit |
-| `evidence-appraisal.skill` / `.zip` | The **installable package** (identical contents). Upload this to install/update the skill. | Auto-generated |
+| `evidence-appraisal-standalone.skill` / `.zip` | **Upload THIS to Claude Desktop.** A self-contained single `SKILL.md` with every checklist inlined — because Claude's skill upload keeps only `SKILL.md` and drops bundled folders. | Auto-generated |
+| `evidence-appraisal.skill` / `.zip` | Modular package (SKILL.md + separate reference files). Fine for hosts that keep the whole bundle; on Claude Desktop it installs **incomplete**, so prefer the standalone above. | Auto-generated |
+| `build-standalone.py` | Rebuilds the self-contained standalone from the modular sources. | Run, don't edit |
 | **`copilot-m365\`** | Transfer pack for **Microsoft 365 Copilot**: agent instructions + combined knowledge file + build guide. | Reference / share |
 
 ---
@@ -57,7 +59,7 @@ When you change *how* it appraises — add a tool (e.g. CONSORT), refine a check
 1. Edit the files in `evidence-appraisal\`.
 2. Bump `version:` in `SKILL.md` and add an entry to `CHANGELOG.md`.
 3. Double-click **`repackage.cmd`** (or run `python repackage.py`).
-4. Re-publish: **Claude → Settings → Customize → Skills → Add** → select `evidence-appraisal.skill`. This bumps "Last updated" on the installed skill.
+4. Re-publish: run `python build-standalone.py`, then **Claude → Settings → Customize → Skills → Add** → select `evidence-appraisal-standalone.skill`. This bumps "Last updated" on the installed skill. *(Claude's upload keeps only `SKILL.md`, so the standalone — every checklist inlined — is the one to use; the modular `.skill` would install without its checklists.)*
 
 > ⚠️ **Editing the folder does NOT change the installed skill.** The version in Claude is a snapshot taken at upload. You must re-package (step 3) and re-add (step 4) to publish an update. Think of the folder as source code and the installed skill as a deployed build.
 
